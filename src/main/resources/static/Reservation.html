@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="diseño2.css">
+	<meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="application/json" >
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Access-Control-Allow-Origin" content="*">
+    <title>Reserva</title>
+</head>
+<body onLoad="pintarSelectRoom(0),pintarSelectClient(0),pintarSelectStatus('created')">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+	<script type="text/javascript" src="js/misFuncionesreser.js"></script>
+	<center><font size=4 color=white>
+    <h1>Reservaciones</h1></font></center>
+    <font size=4 color=white>
+	<div id="resultado"></div></font>
+   <input type ="button" onclick="traerInformacion()" title="Consultar" value="Consultar">
+   <div>
+    <input id="idreservation" type="hidden" >
+       <input type="text" id="startDate" placeholder="fecha inicio">
+       <input type="text" id="devolutionDate" placeholder="fecha devolucion">
+     
+       <select id="status"  required></select>
+       <select id="client"  required></select>
+       <select id="room"  required></select>
+        
+<!--
+       <input type="number" id="category" placeholder="category_id">
+-->
+   </div>
+   <button onclick="guardarInformacion()">Guardar!</button>
+   <button onclick="actualizarInformacion()">Actualizar</button>
+</body>
+</html>

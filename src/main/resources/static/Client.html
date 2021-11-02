@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="diseño2.css">
+	<meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="application/json" >
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Access-Control-Allow-Origin" content="*">
+    <title>Reserva</title>
+</head>
+<body>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+	<script type="text/javascript" src="js/misFuncionesclient.js"></script>
+	<center><font size=4 color=white>
+    <h1>Clientes</h1></font></center>
+    <font size=4 color=white>
+	<div id="resultado"></div></font>
+   <input type ="button" onclick="traerInformacion()" title="Consultar" value="Consultar">
+   <div>
+    <input id="idclient" type="hidden" >
+       <input type="text" id="name" placeholder="nombre">
+       <input type="text" id="email" placeholder="correo">
+       <input type="number" id="age" placeholder="edad">
+       <input type="text" id="password" placeholder="contraseña">
+
+<!--
+       <input type="number" id="category" placeholder="category_id">
+-->
+   </div>
+   <button onclick="guardarInformacion()">Guardar!</button>
+   <button onclick="actualizarInformacion()">Actualizar</button>
+</body>
+</html>
